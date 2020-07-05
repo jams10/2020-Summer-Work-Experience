@@ -1,5 +1,5 @@
 -- Closure(함수와 그 함수가 사용하는 비지역 변수들의 묶음)
--- Lua에서 함수는 변수와 동등한 궝한을 갖는 성질을 활용
+-- Lua에서 함수는 변수와 동등한 한을 갖는 성질을 활용
 
 local function currentCount()
   i=0
