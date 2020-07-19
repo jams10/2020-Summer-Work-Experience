@@ -115,6 +115,43 @@ strip.numPixels();
 
 strip.setBrightness(64); // 전체적인 밝기를 1/4로 설정.
 
+/*
+  <기타 아두이노 함수>
+*/
+
+/*
+  1. delay
+     - 프로그램 동작시 일정시간 멈추게 하는 함수.
+     - 매개변수 단위는 ms(1/1000초)
+*/
+
+delay(1000); // 1초간 딜레이
+
+/*
+  2. Serial.begin(speed)
+     - speed로 설정한 속도(초당 몇 비트로 통신할 것인지. 보통 9600)로 시리얼 통신 시작.
+*/
+
+Serial.begin(9600);
+
+/*
+  3. Serial.println()
+     - 시리얼 모니터에 출력.
+*/
+
+Serial.println("Hello");
+
+/*
+  4. 센서 입력 받기
+
+     사운드 센서의 경우 
+     int sensor = A0; // 아날로그 0번 핀에 센서 연결.
+
+     pinMode(sensor, INPUT); // 아날로그 0번 핀을 아날로그 입력으로 설정.
+
+     analogRead(sensor); // 입력핀으로 설정한 핀의 번호를 매개변수로 넘겨 아날로그 값 읽어옴.
+                         // 이때, 0~1023의 디지털 값으로 변환하여 리턴해줌.
+*/
 
 /*
   References
